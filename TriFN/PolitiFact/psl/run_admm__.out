@@ -1,0 +1,43 @@
+usage: psl -i <inferenceMethod> | -l <learner> | -h | -v  [-4j <path>] [-D <name=value>] [-d <path>]
+       [-e <evaluator ...>] [--groundrules <path>]  [--h2path <path>] [-int] [-m <path>] [-o <path>]
+       [-p <path>] [--postgres <name>] [--satisfaction <path>]
+ -i,--infer <inferenceMethod>   Run MAP inference. You can optionally supply a fully qualified name
+                                for an inference application (defaults to
+                                org.linqs.psl.application.inference.MPEInference).
+ -l,--learn <learner>           Run weight learning. You can optionally supply a fully qualified
+                                name for a weight learner (defaults to
+                                org.linqs.psl.application.learning.weight.maxlikelihood.MaxLikelihoo
+                                dMPE).
+ -4j,--log4j <path>             Optional log4j properties file path
+ -D <name=value>                Directly specify PSL properties (overrides options set via
+                                --properties). See
+                                https://github.com/linqs/psl/wiki/Configuration-Options for a list
+                                of available options. Log4j properties (properties starting with
+                                'log4j') will be passed to the logger. 'log4j.threshold=DEBUG', for
+                                example, will be passed to log4j and set the global logging
+                                threshold.
+ -d,--data <path>               Path to PSL data file
+ -e,--eval <evaluator ...>      Run the named evaluator
+                                (org.linqs.psl.evaluation.statistics.Evaluator) on any open
+                                predicate with a 'truth' partition. If multiple evaluators are
+                                specific, they will each be run.
+    --groundrules <path>        Output the program's ground rules. If a path is specified, the
+                                ground rules will be output there. Otherwise, they will be output to
+                                stdout (not the logger).
+ -h,--help                      Print this help message and exit
+    --h2path <path>             Path for H2 database file (defaults to 'cli_<user name>@<host name>'
+                                ('/tmp/cli_ssriniv9@twinlakes')). Not compatible with the
+                                '--postgres' option.
+ -int,--int-ids                 Use integer identifiers (UniqueIntID) instead of string identifiers
+                                (UniqueStringID).
+ -m,--model <path>              Path to PSL model file
+ -o,--output <path>             Optional path for writing results to filesystem (default is STDOUT)
+ -p,--properties <path>         Optional PSL properties file path
+    --postgres <name>           Name for the PostgreSQL database to use (defaults to psl_cli). Not
+                                compatible with the '--h2path' option. Currently only local
+                                databases without credentials are supported.
+    --satisfaction <path>       Output the program's ground rules along with their satisfaction
+                                values after inference. If a path is specified, the ground rules
+                                will be output there. Otherwise, they will be output to stdout (not
+                                the logger).
+ -v,--version                   Print the PSL version and exit

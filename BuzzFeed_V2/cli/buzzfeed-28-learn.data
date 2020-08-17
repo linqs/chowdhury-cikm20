@@ -1,0 +1,41 @@
+predicates:
+   Pub/1: closed
+   Block/1: closed
+   BiGPred/1: closed
+   UiGPred/1: closed
+   PubCred/1: closed
+   PubCredNot/1: closed
+   PubLeft/1: closed
+   PubRight/1: closed
+   PubCenter/1: closed
+   NewsPub/2: closed
+   UserShare/2: closed
+   UserUltraShare/2: closed
+   Follows/2: closed
+   FakeNews/1: open
+   PubCredLat/1: open
+   UserCredLat/1: open
+
+observations:
+   Pub: ../data/BuzzFeedPublishers.txt
+   Block: ../data/28_fold/Learn/BuzzFeedBlock.txt
+   BiGPred: ../data/28_fold/Learn/BuzzFeedLRBiPred.txt
+   UiGPred: ../data/28_fold/Learn/BuzzFeedLRUniPred.txt
+   PubCred: ../data/BuzzFeedPublisherCred.txt
+   PubCredNot: ../data/BuzzFeedPublisherCredNot.txt
+   PubLeft: ../data/BuzzFeedPublisherLeft.txt
+   PubRight: ../data/BuzzFeedPublisherRight.txt
+   PubCenter: ../data/BuzzFeedPublisherNeutral.txt
+   NewsPub: ../data/BuzzFeedNewsPublisher.txt
+   UserShare: ../data/BuzzFeedNewsIDUserShare.txt
+   UserUltraShare: ../data/BuzzFeedNewsIDUserUltraShare.txt
+   Follows: ../data/BuzzFeedUserUser.txt
+   FakeNews: ../data/28_fold/Learn/BuzzFeedObs.txt
+
+targets:
+   FakeNews: ../data/28_fold/Learn/BuzzFeedTarget.txt
+   PubCredLat: ../data/BuzzFeedPublishers.txt
+   UserCredLat: ../data/BuzzFeedUsersNum.txt
+
+truth:
+   FakeNews: ../data/28_fold/Learn/BuzzFeedTruth.txt

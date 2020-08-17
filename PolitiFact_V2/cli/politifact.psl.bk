@@ -1,0 +1,8 @@
+1.0: !PubCred(P) & NewsPub(N, P) -> FakeNews(N) ^2
+1.0: PubCred(P) & NewsPub(N, P) -> !FakeNews(N) ^2
+1.0: UserShare(N, U) & FakeNews(N) & UserShare(N1, U) -> FakeNews(N1) ^2
+1.0: UserShare(N, U) & !FakeNews(N) & UserShare(N1, U) -> !FakeNews(N1) ^2
+
+// Negative prior.
+//0.1: FakeNews(N) = 0.0 ^2
+//0.1: PubCredLat(P) = 0.5 ^2

@@ -1,0 +1,2 @@
+17527 [main] INFO  org.linqs.psl.cli.Launcher  - Evaluation results for FAKENEWS -- Accuracy: 0.837838, F1: 0.857143, Positive Class Precision: 0.782609, Positive Class Recall: 0.947368, Negative Class Precision: 0.928571, Negative Class Recall: 0.722222
+17750 [main] INFO  org.linqs.psl.cli.Launcher  - Evaluation results for FAKENEWS -- Accuracy: 0.729730, F1: 0.722222, Positive Class Precision: 0.565217, Positive Class Recall: 1.000000, Negative Class Precision: 1.000000, Negative Class Recall: 0.583333

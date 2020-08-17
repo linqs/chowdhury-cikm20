@@ -1,0 +1,14 @@
+http://100percentfedup.com	0.0
+http://allenwestrepublic.com	0.0
+http://clashdaily.com	0.0
+http://cnn.it	0.75
+http://conservativebyte.com	0.0
+http://conservativetribune.com	0.0
+http://eaglerising.com	0.0
+http://politi.co	1.0
+http://goo.gl	1.0
+http://washingtonpost.com	1.0
+http://usherald.com	0.0
+http://opposingviews.com	0.5
+http://thepoliticalinsider.com	0.5
+unknown	0.0

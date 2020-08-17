@@ -1,0 +1,2 @@
+wc -l output_all_latent-learned.txt
+grep -o Accuracy:........ output_all_latent-learned.txt |sed "s/Accuracy: //g"|awk '{sum+=$1;n+=1} END {print "Acc"sum/n}';grep -o F1:........ output_all_latent-learned.txt |sed "s/F1: //g"|awk '{sum+=$1;n+=1} END {print "F1"sum/n}';grep -o "Positive Class Precision:........" output_all_latent-learned.txt |sed "s/Positive Class Precision: //g"|awk '{sum+=$1;n+=1}END{print "Precision"sum/n}';grep -o "Positive Class Recall:........" output_all_latent-learned.txt |sed "s/Positive Class Recall: //g"|awk '{sum+=$1;n+=1}END{print "Recall"sum/n}'

@@ -1,0 +1,41 @@
+predicates:
+   Pub/1: closed
+   Block/1: closed
+   BiGPred/1: closed
+   UiGPred/1: closed
+   PubCred/1: closed
+   PubCredNot/1: closed
+   PubLeft/1: closed
+   PubRight/1: closed
+   PubCenter/1: closed
+   NewsPub/2: closed
+   UserShare/2: closed
+   UserUltraShare/2: closed
+   Follows/2: closed
+   FakeNews/1: open
+   PubCredLat/1: open
+   UserCredLat/1: open
+
+observations:
+   Pub: ../data/PolitiFactPublishers.txt
+   Block: ../data/20_fold/Learn/PolitiFactBlock.txt
+   BiGPred: ../data/20_fold/Learn/PolitiFactLRBiPred.txt
+   UiGPred: ../data/20_fold/Learn/PolitiFactLRUniPred.txt
+   PubCred: ../data/PolitiFactPublisherCred.txt
+   PubCredNot: ../data/PolitiFactPublisherCredNot.txt
+   PubLeft: ../data/PolitiFactPublisherLeft.txt
+   PubRight: ../data/PolitiFactPublisherRight.txt
+   PubCenter: ../data/PolitiFactPublisherNeutral.txt
+   NewsPub: ../data/PolitiFactNewsPublisher.txt
+   UserShare: ../data/PolitiFactNewsIDUserShare.txt
+   UserUltraShare: ../data/PolitiFactNewsIDUserUltraShare.txt
+   Follows: ../data/PolitiFactUserUser.txt
+   FakeNews: ../data/20_fold/Learn/PolitiFactObs.txt
+
+targets:
+   FakeNews: ../data/20_fold/Learn/PolitiFactTarget.txt
+   PubCredLat: ../data/PolitiFactPublishers.txt
+   UserCredLat: ../data/PolitiFactUsersNum.txt
+
+truth:
+   FakeNews: ../data/20_fold/Learn/PolitiFactTruth.txt

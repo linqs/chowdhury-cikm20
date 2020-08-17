@@ -1,0 +1,35 @@
+predicates:
+   Pub/1: closed
+   PubCred/1: closed
+   PubCredNot/1: closed
+   PubLeft/1: closed
+   PubRight/1: closed
+   PubCenter/1: closed
+   NewsPub/2: closed
+   UserShare/2: closed
+   UserUltraShare/2: closed
+   Follows/2: closed
+   FakeNews/1: open
+   PubCredLat/1: open
+   UserCredLat/1: open
+
+observations:
+   Pub: ../BuzzFeedPublishers.txt
+   PubCred: ../BuzzFeedPublisherCred.txt
+   PubCredNot: ../BuzzFeedPublisherCredNot.txt
+   PubLeft: ../BuzzFeedPublisherLeft.txt
+   PubRight: ../BuzzFeedPublisherRight.txt
+   PubCenter: ../BuzzFeedPublisherNeutral.txt
+   NewsPub: ../BuzzFeedNewsPublisher.txt
+   UserShare: ../BuzzFeedNewsIDUserShare.txt
+   UserUltraShare: ../BuzzFeedNewsIDUserUltraShare.txt
+   Follows: ../BuzzFeedUserUser.txt
+   FakeNews: BuzzFeedNewsObs.txt
+
+targets:
+   FakeNews: BuzzFeedNewsTarget.txt
+   PubCredLat: ../BuzzFeedPublishers.txt
+   UserCredLat: ../BuzzFeedUsersNum.txt
+
+truth:
+   FakeNews: BuzzFeedNewsTruth.txt

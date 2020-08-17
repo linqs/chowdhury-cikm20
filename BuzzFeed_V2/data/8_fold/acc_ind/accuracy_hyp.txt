@@ -1,0 +1,2 @@
+"alpha_bi"	"lambda_bi"	"accuracy_val"	"accuracy_test"	"alpha_uni"	"lambda_uni"	"accuracy_val_uni"	"accuracy_test_uni"
+0.1	0.15	0.861111111111111	0.833333333333333	0	0.85	0.75	0.694444444444444

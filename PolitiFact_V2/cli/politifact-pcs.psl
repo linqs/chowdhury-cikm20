@@ -1,0 +1,4 @@
+1.0: PubCred(P) -> PubCredLat(P) ^2
+1.0: PubCredNot(P) -> !PubCredLat(P) ^2
+1.0: Block(N) & !PubCredLat(P) & NewsPub(N, P) -> FakeNews(N) ^2
+1.0: Block(N) & PubCredLat(P) & NewsPub(N, P) -> !FakeNews(N) ^2
