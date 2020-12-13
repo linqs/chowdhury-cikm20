@@ -12,6 +12,10 @@ Pre-requisite: Java installed, postgres installed
 ensure you have a postgres database with name psl
 details :  https://linqs-data.soe.ucsc.edu/psl-docs/wikis/psl-wiki-2.1.0.html#UsingPostgreSQLwithPSL
 
-To run and replicate results:
+To run and replicate results (dataset=BuzzFeed or PolitiFact):
+
 cd ${dataset}/cli/
+
 bash run_all.sh
+
+The ipynb file is a R backend notebook used to run logistic-regression and generate 30-fold dataset which is present in ${dataset}/data
