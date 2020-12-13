@@ -1,0 +1,4 @@
+1.0: Block(N) & UserShare(N, U) & FakeNews(N) -> !UserCredLat(U) ^2
+1.0: Block(N) & UserShare(N, U) & !FakeNews(N) -> UserCredLat(U) ^2
+1.0: Block(N) & UserCredLat(U) & UserShare(N, U) -> !FakeNews(N) ^2
+1.0: Block(N) & !UserCredLat(U) & UserShare(N, U) -> FakeNews(N) ^2
